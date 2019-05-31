@@ -19,28 +19,28 @@ let g:colors_name = "vim-material"
 let s:gui = {}
 let s:cterm = {}
 
-let s:gui.background = { 'dark': '#263238', 'light': '#FAFAFA', 'palenight': '#292D3E', 'oceanic': '#0F111A'  }
-let s:gui.foreground = { 'dark': '#ECEFF1', 'light': '#666666', 'palenight': '#A6ACCD', 'oceanic': '#A6ACCD'  }
-let s:gui.none       = { 'dark': 'NONE',    'light': 'NONE',    'palenight': 'NONE'   , 'oceanic': 'NONE'     }
-let s:gui.selection  = { 'dark': '#455A64', 'light': '#CCEAE7', 'palenight': '#434A6C', 'oceanic': '#292D3E'  }
-let s:gui.line       = { 'dark': '#212121', 'light': '#EAEFF0', 'palenight': '#191919', 'oceanic': '#191919'  }
-let s:gui.comment    = { 'dark': '#5D818E', 'light': '#90A4AE', 'palenight': '#676E95', 'oceanic': '#525975'  }
+let s:gui.background = { 'darker': '#212121', 'dark': '#263238', 'light': '#FAFAFA', 'palenight': '#292D3E', 'oceanic': '#0F111A'  }
+let s:gui.foreground = { 'darker': '#EEFFFF','dark': '#ECEFF1', 'light': '#666666', 'palenight': '#A6ACCD', 'oceanic': '#A6ACCD'  }
+let s:gui.none       = { 'darker': 'NONE', 'dark': 'NONE',    'light': 'NONE',    'palenight': 'NONE'   , 'oceanic': 'NONE'     }
+let s:gui.selection  = { 'darker': '#616161', 'dark': '#455A64', 'light': '#CCEAE7', 'palenight': '#434A6C', 'oceanic': '#292D3E'  }
+let s:gui.line       = { 'darker': '#000000', 'dark': '#212121', 'light': '#EAEFF0', 'palenight': '#191919', 'oceanic': '#191919'  }
+let s:gui.comment    = { 'darker': '#545454', 'dark': '#5D818E', 'light': '#90A4AE', 'palenight': '#676E95', 'oceanic': '#525975'  }
 
-let s:gui.red          = { 'dark': '#FF5370', 'light': '#E53935', 'palenight': '#FF5370', 'oceanic': '#FF5370'  }
-let s:gui.dark_red     = { 'dark': '#B71C1C', 'light': '#E53935', 'palenight': '#FF5370', 'oceanic': '#FF5370'  }
-let s:gui.pink         = { 'dark': '#F07178', 'light': '#FF5370', 'palenight': '#F07178', 'oceanic': '#F07178'  }
-let s:gui.orange       = { 'dark': '#F78C6C', 'light': '#F76D47', 'palenight': '#F78C6C', 'oceanic': '#F78C6C'  }
-let s:gui.light_yellow = { 'dark': '#FFE57F', 'light': '#FFAD13', 'palenight': '#FFE57F', 'oceanic': '#FFE57F'  }
-let s:gui.yellow       = { 'dark': '#FFCB6B', 'light': '#FFAD13', 'palenight': '#FFCB6B', 'oceanic': '#FFCB6B'  }
-let s:gui.green        = { 'dark': '#C3E88D', 'light': '#82A550', 'palenight': '#C3E88D', 'oceanic': '#C3E88D'  }
-let s:gui.teal         = { 'dark': '#004D40', 'light': '#CCEAE7', 'palenight': '#004D40', 'oceanic': '#004D40'  }
-let s:gui.light_teal   = { 'dark': '#69F0AE', 'light': '#73B6B0', 'palenight': '#69F0AE', 'oceanic': '#69F0AE'  }
-let s:gui.pale_blue    = { 'dark': '#B2CCD6', 'light': '#8796B0', 'palenight': '#B2CCD6', 'oceanic': '#B2CCD6'  }
-let s:gui.cyan         = { 'dark': '#89DDFF', 'light': '#39ADB5', 'palenight': '#89DDFF', 'oceanic': '#89DDFF'  }
-let s:gui.blue         = { 'dark': '#82AAFF', 'light': '#6182B8', 'palenight': '#82AAFF', 'oceanic': '#82AAFF'  }
-let s:gui.purple       = { 'dark': '#C792EA', 'light': '#7C4DFF', 'palenight': '#C792EA', 'oceanic': '#C792EA'  }
-let s:gui.violet       = { 'dark': '#BB80B3', 'light': '#945EB8', 'palenight': '#BB80B3', 'oceanic': '#BB80B3'  }
-let s:gui.brown        = { 'dark': '#AB7967', 'light': '#AB7967', 'palenight': '#C17E70', 'oceanic': '#C17E70'  }
+let s:gui.red          = { 'darker': '#FF5370', 'dark': '#FF5370', 'light': '#E53935', 'palenight': '#FF5370', 'oceanic': '#FF5370'  }
+let s:gui.dark_red     = { 'darker': '#FF5370', 'dark': '#B71C1C', 'light': '#E53935', 'palenight': '#FF5370', 'oceanic': '#FF5370'  }
+let s:gui.pink         = { 'darker': '#f07178', 'dark': '#F07178', 'light': '#FF5370', 'palenight': '#F07178', 'oceanic': '#F07178'  }
+let s:gui.orange       = { 'darker': '#F78C6C', 'dark': '#F78C6C', 'light': '#F76D47', 'palenight': '#F78C6C', 'oceanic': '#F78C6C'  }
+let s:gui.light_yellow = { 'darker': '#FFCC00', 'dark': '#FFE57F', 'light': '#FFAD13', 'palenight': '#FFE57F', 'oceanic': '#FFE57F'  }
+let s:gui.yellow       = { 'darker': '#FFCB6B', 'dark': '#FFCB6B', 'light': '#FFAD13', 'palenight': '#FFCB6B', 'oceanic': '#FFCB6B'  }
+let s:gui.green        = { 'darker': '#C3E88D', 'dark': '#C3E88D', 'light': '#82A550', 'palenight': '#C3E88D', 'oceanic': '#C3E88D'  }
+let s:gui.teal         = { 'darker': '#004D40', 'dark': '#004D40', 'light': '#CCEAE7', 'palenight': '#004D40', 'oceanic': '#004D40'  }
+let s:gui.light_teal   = { 'darker': '#69F0AE', 'dark': '#69F0AE', 'light': '#73B6B0', 'palenight': '#69F0AE', 'oceanic': '#69F0AE'  }
+let s:gui.pale_blue    = { 'darker': '#B2CCD6', 'dark': '#B2CCD6', 'light': '#8796B0', 'palenight': '#B2CCD6', 'oceanic': '#B2CCD6'  }
+let s:gui.cyan         = { 'darker': '#89DDFF', 'dark': '#89DDFF', 'light': '#39ADB5', 'palenight': '#89DDFF', 'oceanic': '#89DDFF'  }
+let s:gui.blue         = { 'darker': '#82AAFF', 'dark': '#82AAFF', 'light': '#6182B8', 'palenight': '#82AAFF', 'oceanic': '#82AAFF'  }
+let s:gui.purple       = { 'darker': '#C792EA', 'dark': '#C792EA', 'light': '#7C4DFF', 'palenight': '#C792EA', 'oceanic': '#C792EA'  }
+let s:gui.violet       = { 'darker': '#bb80b3', 'dark': '#BB80B3', 'light': '#945EB8', 'palenight': '#BB80B3', 'oceanic': '#BB80B3'  }
+let s:gui.brown        = { 'darker': '#C17E70', 'dark': '#AB7967', 'light': '#AB7967', 'palenight': '#C17E70', 'oceanic': '#C17E70'  }
 
 if !exists('g:material_style')
   let g:material_style='default'
@@ -97,7 +97,11 @@ if has("nvim")
 endif
 
 " Editor colors
-call s:hi("ColorColumn",  s:gui.none,       s:gui.line,       "", "", "")
+if g:material_style == 'darker'
+  call s:hi("ColorColumn",  s:gui.none,       "",      s.gui.selection, "", "")  
+else
+  call s:hi("ColorColumn",  s:gui.none,       s:gui.line,       "", "", "")
+endif
 call s:hi("Cursor",       s:gui.yellow,     "",               "", "", "")
 call s:hi("CursorColumn", s:gui.none,       s:gui.line,       "", "", "")
 call s:hi("LineNr",       s:gui.comment,    "",               "", "", "")
