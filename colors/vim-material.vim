@@ -97,11 +97,7 @@ if has("nvim")
 endif
 
 " Editor colors
-if g:material_style == 'darker'
-  call s:hi("ColorColumn",  s:gui.none,       "",      s.gui.selection, "", "")  
-else
-  call s:hi("ColorColumn",  s:gui.none,       s:gui.line,       "", "", "")
-endif
+call s:hi("ColorColumn",  s:gui.none,       s:gui.line,       "", "", "")
 call s:hi("Cursor",       s:gui.yellow,     "",               "", "", "")
 call s:hi("CursorColumn", s:gui.none,       s:gui.line,       "", "", "")
 call s:hi("LineNr",       s:gui.comment,    "",               "", "", "")
